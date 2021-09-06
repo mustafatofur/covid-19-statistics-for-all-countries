@@ -1,0 +1,9 @@
+RewriteEngine on
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php
+
+
+RewriteRule ^sort* index.php?sort=deaths#real [L,NC]
+RewriteRule ^([0-9a-zA-Z_\s]+)$   details.php?country=$1 [L,NC]
