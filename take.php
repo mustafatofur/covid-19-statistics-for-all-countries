@@ -6,6 +6,4 @@ $reverse = array_reverse($url2);
 echo "<pre>";
 print_r($reverse);
 echo "</pre>";
-
-
 ?>
